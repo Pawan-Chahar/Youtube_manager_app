@@ -1,6 +1,8 @@
 from pymongo import MongoClient
+from bson import ObjectId
 
-client = MongoClient("")
+client = MongoClient("", tlsAllowInvalidCertificates=True)
+
 
 
 print(client)
@@ -21,10 +23,13 @@ def list_videos():
 
 
 def update_video(video_id , name , time):
-    video_collection.update_one({'_id': video_id},{"$set": {"name" : new_name , "time":new_time}})
+    video_collection.update_one({'_id': ObjectId(video_id)},{"$set": {"name" : new_name , "time":new_time}})
+
 
 def delete_video(video_id):
     video_collection.delete_one({"_id": video_id})
+
+# TODO  : debug this video_id problem
 
 def main():
     while True:
