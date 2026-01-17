@@ -1,5 +1,4 @@
 
-```markdown
 # YouTube Manager App
 
 A simple, lightweight **Python console-based YouTube video manager** that helps you organize and keep track of your favorite YouTube videos, playlists, or channels — all locally on your machine!
