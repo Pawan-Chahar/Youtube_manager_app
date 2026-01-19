@@ -15,7 +15,7 @@ def sync_requests():
         "https://httpbin.org/delay/1",
         "https://httpbin.org/delay/1"
     ]
-
+    
     start = time.time()
     for i, url in enumerate(urls):
         ic(f"Request {i+1}: starting")
