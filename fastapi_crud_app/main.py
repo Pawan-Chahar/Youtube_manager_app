@@ -59,7 +59,6 @@ get_db()
 
 
 
-
 @app.get("/")
 def root():
     return {"message": "Intro to FastAPI with SQL"}
