@@ -1,8 +1,5 @@
 import json 
 
-
-
-
 def load_data():
     try:
         with open('youtube.txt' , 'r') as file:
@@ -94,4 +91,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()        
+    main()
